@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Kartavya
+		</title>
+		<link rel= "stylesheet" href="CSS/mno.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<img src="Images/tbc1.png" alt="TBC" width="800px" height=250px"/>
+			</div>
+			<!--Navigation Bar-->
+			<div id="nav">
+				<ul>
+					<li><a class ="nav" href="index.html">Home</a></li>
+					<li>
+						<a class ="nav" href="about_us.html">About us</a></li>
+					<li><a class ="nav" href="news.html">News</a>
+						<ul>
+							<li><a class ="nav" href="party.html">Party</a></li>
+							<li><a class ="nav" href="sports.html">sports</a></li>
+						</ul>
+						</li>
+					<li><a class ="nav" href="courses.html">courses</a></li>
+					<li><a class ="nav" href="admissions.html">Admissions</a>
+						<ul>
+						<li><a class ="nav" href="imageslider.html">CollegeTour</a></li>
+						<li><a class ="nav" href="form.html">Form</a></li>
+					</li>	
+				</ul>
+			</div>
+			<div id="container">
+				<img  name="slide" src="Images/sports1.jpg" width="800" />
+				<p>
+					Why Study at The British College
+					The British College provides world-class education in Nepal for students who need to gain internationally recognised qualifications, from UK Universities. In this regard we have a distinctive identity as the pioneering International College in Nepal. We offer internationally recognised degrees and courses which are relevant to the current job market, enhancing each and every student's employability.
+				</p>
+				<p>
+					We attract the best and the brightest Nepalese students and consequently, the British College offers an unforgettable academic experience transcending international boundaries with thought-provoking incision. Being the pioneering International College in Nepal, we also provide our students with unparalleled international exposure and experiences.
+					The defining characteristic of The British College is the "local to global" approach in the provision of our degrees and courses. Student exchange programmes and internships with multi-national companies (worldwide) serve as highlights of this unique student experience. Staffed by tutors and administrative personnel from the UK and Nepal, the College provides the best international education in Nepal.
+				</p>
+				<p>
+					An international university degree, the same as you would get if you were studying in the UK. Business Service, The British College aims to potentially open doors for joint ventures or business partnerships.
+				</p>
+				<p>
+					An international university degree, the same as you would get if you were studying in the UK.
+					Business Service
+					The British College aims to potentially open doors for joint ventures or business partnerships.
+					In this regard we have a distinctive identity as the pioneering International College in Nepal. We offer internationally recognised degrees and courses which are relevant to the current job market, enhancing each and every student's employability.
+				<p>
+			</div>
+			<script language="JavaScript">
+			var i = 0;
+			var path = new Array();
+			 
+			// LIST OF IMAGES
+			path[0] = "Images/sports1.jpg";
+			path[1] = "Images/party1.jpg";
+			path[2] = "Images/sports2.jpg";
+			path[3] = "Images/party2.jpg";
+			path[4] = "Images/sports3.jpg";
+			path[5] = "Images/party3.jpg";
+			path[6] = "Images/sports4.jpg";
+			path[7] = "Images/party4.jpg";
+
+			function swapImage()
+			{
+			   document.slide.src = path[i];
+			   if(i < path.length - 1) i++; else i = 0;
+			   setTimeout("swapImage()",2000);
+			}
+			window.onload=swapImage();
+			</script>
+			<div id="footer">
+					<img src ="Images/honors.jpg" alt="ACCA" width="800px" height="150px"> 
+			</div>
+	</body>
+</html>

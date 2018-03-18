@@ -1,0 +1,95 @@
+body{
+	background-color:rgb(123, 123, 123);
+	background-image:url("../Images/bg.jpg");
+	 background-repeat: repeat;
+	font-family:verdana;
+	
+}
+	
+ul{
+	list-style-type:none;
+	text-align:center;
+}
+
+h1, h2, h3{	
+	color:rgb(153, 8, 13);
+}
+
+p{
+	font-family:verdana;
+}
+table,th,td{
+	border:1px solid red;
+}
+.nav:link, .nav:visited{
+	font-size:.75em;
+	font-family:verdana;
+	display: block;
+	width:150px;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+	background-color:rgb(5, 179, 255);
+	text-align:center;
+	padding:21px 6px 19px 4px;
+	text-transform:uppercase;
+}
+
+#nav ul li:hover ul{
+	display: block;
+}
+#nav ul ul{
+	display:none;
+	position:absolute;
+	border:3px solid;
+	float:left;
+}
+#nav ul ul li a:visited, a:hover{
+	background-color:green; 
+	text-decoration:underline;
+}
+
+#nav ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	display:flex;
+	
+}
+.nav:hover,.nav:active{
+	color:#001100; 
+	background-color:green; 
+	text-decoration:underline;
+}
+.img{
+	float:right;
+}
+
+.img3{
+	float:right;
+	border:1px solid rgb(5, 179, 255);
+	
+}
+.img2{
+	float:left;
+	border:1px solid rgb(5, 179, 255);
+}
+
+#container{
+	align:auto;
+	background-color:white;
+	width: 800px;
+	margin: -08px auto;
+}
+
+#content{
+	padding: 12px 84px 33px 85px;
+	//margin left: 10px
+	//margin right: 2px
+}
+#footer{
+	background-color:rgb(5, 179, 255);
+	width:800px;
+	text-align:center;
+}
